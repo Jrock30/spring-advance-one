@@ -32,7 +32,7 @@ public class TraceId {
         return new TraceId(id, level - 1); // 로그 레벨 감소를 위한
     }
 
-    public Boolean isFirstLeve() {
+    public Boolean isFirstLevel() {
         return level == 0; // 첫번째 레벨 여부
     }
 
