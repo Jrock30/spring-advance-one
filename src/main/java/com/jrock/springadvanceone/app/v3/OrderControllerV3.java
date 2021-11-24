@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Trace(로그 추적기) V2 Level 적용
+ * Trace(로그 추적기) V3 Level 적용
  */
 @RestController
 @RequiredArgsConstructor

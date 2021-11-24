@@ -5,7 +5,7 @@ import com.jrock.springadvanceone.trace.TraceStatus;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * 빈으로 등록할 LogTrace (동시성 문제)
+ * 빈으로 등록할 LogTrace (동시성 문제 해결 ThreadLocal 사용)
  *   - 현재 이 것은 동시성 문제가 발생한다. 예를들어 순식간에 여러번 호출하게 되면 트랜잭션 ID가 동일하고 레벨 또한 이상하게 더 늘어난다.
  *   ** 이유는 FieldLogTrace 는 실글톤으로 등록된 스프링 빈이다. 이 객체의 인스턴스가 애플리케이션에 딱 1개 존재한다는 뜻이다.
  *      이렇게 하나만 있는 인스턴스의 FieldLogTrace.traceIdHolder 필드를 여러 쓰레드가 동시에 접근하기 때문에 문제가 발생한다.
