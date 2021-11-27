@@ -25,7 +25,7 @@ public class ContextV1 {
     public void execute() {
         long startTime = System.currentTimeMillis();
         // 비즈니스 로직 실행
-        strategy.call();
+        strategy.call(); // 위임
         // 비즈니스 로직 종료
         long endTime = System.currentTimeMillis();
         long resultTime = endTime - startTime;

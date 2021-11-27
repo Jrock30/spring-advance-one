@@ -1,5 +1,7 @@
 package com.jrock.springadvanceone;
 
+import com.jrock.springadvanceone.trace.callback.TraceCallback;
+import com.jrock.springadvanceone.trace.callback.TraceTemplate;
 import com.jrock.springadvanceone.trace.logtrace.FieldLogTrace;
 import com.jrock.springadvanceone.trace.logtrace.LogTrace;
 import com.jrock.springadvanceone.trace.logtrace.ThreadLocalLogTrace;
